@@ -179,7 +179,7 @@ export function GameOverScreen({ score, stats, victory, onRestart }: GameOverScr
         {/* CTA + Restart */}
         <div className="flex gap-2">
           <a
-            href="https://www.ledeposeurselectif.fr"
+            href="https://www.le-deposeur-selectif.fr"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => sfx.uiClick()}
