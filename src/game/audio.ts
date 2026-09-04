@@ -4,8 +4,10 @@ let audioCtx: AudioContext | null = null;
 
 function getCtx(): AudioContext {
   if (!audioCtx) {
-    audioCtx = new (window.AudioContext || (window as any).webkitAudioContext)();
+    const AudioContextClass = window.AudioContext || (window as any).webkitAudioContext;
+    audioCtx = new AudioContextClass();
   }
+  // Force le réveil du contexte à chaque appel s'il est endormi
   if (audioCtx.state === 'suspended') {
     audioCtx.resume();
   }
