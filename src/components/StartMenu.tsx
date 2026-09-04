@@ -14,12 +14,17 @@ export function StartMenu({ onStart }: StartMenuProps) {
       <div className="glass-dark rounded-3xl p-6 sm:p-10 max-w-2xl w-full animate-scale-in">
         {/* Title */}
         <div className="text-center mb-6">
-          <div className="inline-flex items-center gap-2 mb-2">
+          <a 
+            href="https://le-deposeur-selectif.fr/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 mb-2 hover:opacity-80 transition-opacity"
+          >
             <Wrench className="w-8 h-8 text-yellow-400" />
             <span className="text-green-400 font-black text-sm tracking-widest uppercase">
               Le Déposeur Sélectif
             </span>
-          </div>
+          </a>
           <h1 className="text-5xl sm:text-7xl font-black text-yellow-400 text-stroke leading-tight">
             SUPER DÉPOSEUR
           </h1>
